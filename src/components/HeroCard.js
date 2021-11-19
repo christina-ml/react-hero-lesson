@@ -2,11 +2,13 @@ import { Component } from "react";
 
 class HeroCard extends Component{
     render(){
+        const { name, description, thumbnail } = this.props.hero;
+
         return(
             <div className="heroCard">
-                <h2>Name</h2>
-                <p>Description</p>
-                <img src="thumbnail" alt="name" />
+                <h2>{name}</h2>
+                <p>{description}</p>
+                <img src={thumbnail} alt={name} />
             </div>
         )
     }
