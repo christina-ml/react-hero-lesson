@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <div className="app">
         <HeroForm handleHeroSelect={this.handleHeroSelect}/>
-        <HeroList />
+        <HeroList selected={this.state.selected}/>
       </div>
     );
   }
