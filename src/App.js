@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import './App.css';
-import superHeroes from './data/superHeroes';
+// import superHeroes from './data/superHeroes';
 import HeroForm from './components/HeroForm';
-import HeroList from './components/HeroList';
+// import HeroList from './components/HeroList';
 
 class App extends Component {
   constructor(){
@@ -11,11 +11,11 @@ class App extends Component {
       
     }
   }
-  
+
   render(){
     return (
       <div className="app">
-  
+        <HeroForm />
       </div>
     );
   }
