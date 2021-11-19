@@ -14,7 +14,14 @@ class App extends Component {
   }
 
   handleHeroSelect = (evt) => {
-    console.log(evt);
+    const { allSuperHeroes } = this.state;
+    const { value } = evt.target;
+    let hero = allSuperHeroes.find(hero=> {
+      return hero.name.includes(value);
+    })
+    this.setState({
+      selected: [...this.state.selected, hero]
+    })
   }
 
   render(){
