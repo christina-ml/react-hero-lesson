@@ -11,4 +11,4 @@ class HeroList extends Component {
     }
 }
 
-export default 
+export default HeroList;
