@@ -6,13 +6,15 @@ class HeroForm extends Component {
     }
 
     render(){
+        const { handleHeroSelect } = this.props;
+
         return(
             <div id="hero-form">
                 <form>
                     <div>
                         <label htmlFor="hero-select"></label>
                     </div>
-                    <select name="hero-select" id="hero-select">
+                    <select onChange={handleHeroSelect} name="hero-select" id="hero-select">
                         <option value="blank"></option>
                         <option value="Spider-Man">Spider-Man</option>
                         <option value="Hulk">Hulk</option>
